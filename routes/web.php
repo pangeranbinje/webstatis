@@ -19,4 +19,8 @@ Route::get('/register', 'AuthController@register');
 
 Route::POST('/welcom', 'AuthController@welcom');
 
+Route::get('/master','AuthController@master');
 
+Route::get('/data', 'AuthController@data');
+
+Route::get('/datatables' , 'AuthController@datatables');

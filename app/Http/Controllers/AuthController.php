@@ -19,4 +19,18 @@ class AuthController extends Controller
         $nama_lengkap = "$nama_depan $nama_blkg";
         return view('welcom', compact('nama_lengkap'));
     }
+    public function master()
+    {
+        return view('master');
+    }
+
+    public function data()
+    {
+        return view('data');
+    }
+
+    public function datatables()
+    {
+        return view('datatables');
+    }
 }
