@@ -24,3 +24,17 @@ Route::get('/master','AuthController@master');
 Route::get('/data', 'AuthController@data');
 
 Route::get('/datatables' , 'AuthController@datatables');
+
+Route::get('/pertanyaan', 'PertanyaanController@index');
+
+Route::get('/pertanyaan/create', 'PertanyaanController@create');
+
+Route::post('/pertanyaan', 'PertanyaanController@store');
+
+Route::get('/pertanyaan/{id}', 'PertanyaanController@show');
+
+Route::get('/pertanyaan/{id}/edit', 'PertanyaanController@edit');
+
+Route::put('/pertanyaan/{id}', 'PertanyaanController@update');
+
+Route::delete('/pertanyaan/{id}', 'PertanyaanController@destroy');
